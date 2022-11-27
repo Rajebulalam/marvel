@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@media only screen and (min-width: 200px) and (max-width: 991px) {
+
+  .navbar-start {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
