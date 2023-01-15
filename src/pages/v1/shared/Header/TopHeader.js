@@ -5,7 +5,7 @@ import React from 'react';
 
 const TopHeader = () => {
     return (
-        <div className='bg-secondary py-2'>
+        <div className='py-2'>
             <div className='w-full md:w-11/12 px-4 md:px-6 mx-auto'>
                 <div className='flex justify-center md:justify-between items-center'>
                     <div className='hidden md:flex'>
@@ -15,14 +15,14 @@ const TopHeader = () => {
                         </span>
                         <span className='flex items-center text-[17px]'>
                             <FontAwesomeIcon icon={faEnvelope} className='text-black pr-3'></FontAwesomeIcon>
-                            aaaaaaaaaa@gmail.com
+                            abc@gmail.com
                         </span>
                     </div>
                     <div>
-                        <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[13px] py-2 mr-3' icon={faFacebookF}></FontAwesomeIcon></span>
-                        <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[10px] py-2 mr-3' icon={faWhatsapp}></FontAwesomeIcon></span>
-                        <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3' icon={faFacebookMessenger}></FontAwesomeIcon></span>
-                        <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[10px] py-2' icon={faLinkedinIn}></FontAwesomeIcon></span>
+                        <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[13px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faFacebookF}></FontAwesomeIcon></span>
+                        <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faWhatsapp}></FontAwesomeIcon></span>
+                        <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faFacebookMessenger}></FontAwesomeIcon></span>
+                        <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[10px] py-2 hover:bg-primary hover:text-white' icon={faLinkedinIn}></FontAwesomeIcon></span>
                     </div>
                 </div>
             </div>
