@@ -6,7 +6,7 @@ import logo from '../../../../assets/images/MR Tech-logos_black.png';
 
 const Footer = () => {
     return (
-        <footer className='py-4'>
+        <footer className='py-4 bg-white'>
             {/* Top Footer Part */}
             <div className='py-3'>
 
@@ -33,12 +33,12 @@ const Footer = () => {
             <div className='PY-2'>
                 <ul style={{ borderTop: '1px solid #242F9B', borderBottom: '1px solid #242F9B' }}>
                     <li className='py-7 w-full md:w-11/12 px-4 md:px-6 mx-auto flex-none md:flex justify-center'>
-                        <Link to='/' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>Home</Link>
+                        <Link to='/home' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>Home</Link>
                         <Link to='/' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>About Us</Link>
                         <Link to='/' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>Products</Link>
                         {/* <Link to='/' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>Services</Link> */}
                         <Link to='/' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>Brands</Link>
-                        <Link to='/' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center'>Contact Us</Link>
+                        <Link to='/contact' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center'>Contact Us</Link>
                     </li>
                 </ul>
             </div>

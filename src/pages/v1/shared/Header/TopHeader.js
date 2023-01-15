@@ -5,7 +5,7 @@ import React from 'react';
 
 const TopHeader = () => {
     return (
-        <div className='py-2'>
+        <div className='py-2 bg-white'>
             <div className='w-full md:w-11/12 px-4 md:px-6 mx-auto'>
                 <div className='flex justify-center md:justify-between items-center'>
                     <div className='hidden md:flex'>

@@ -4,7 +4,7 @@ import React from 'react';
 
 const WhyChooseUs = () => {
     return (
-        <div className='w-full lg:w-11/12 px-4 lg:px-6 mx-auto py-14'>
+        <div className='w-full lg:w-11/12 px-4 lg:px-6 mx-auto py-14 bg-white'>
             <h2 className='text-center font-bold text-3xl font-serif'><span className='text-primary pb-2'>Why</span> Choose Us</h2>
             <p className='text-center text-xl'>We Respect our commitments & Customers.</p>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pt-10'>

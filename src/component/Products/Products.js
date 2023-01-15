@@ -4,7 +4,7 @@ import tiles from '../../assets/images/banner-first2.jpg';
 
 const Products = () => {
     return (
-        <div className='bg-light'>
+        <div className='bg-white'>
             <div className=' w-full md:w-11/12 px-4 md:px-6 mx-auto pt-14'>
                 <h2 className='text-4xl text-center font-bold font-serif'>Our <span className='text-primary'>Products</span></h2>
                 <p className='text-center text-xl'>Some of our products a sample</p>

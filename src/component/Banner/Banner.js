@@ -6,7 +6,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
@@ -49,10 +48,10 @@ const Banner = () => {
                                 <div className='mt-4'>
                                     <button className='btn bg-primary mr-4'>Our Product</button>
                                     <button className='btn border-2 border-primary bg-secondary text-primary hover:text-white'>
-                                        <Link to='tel:+8801872238027'>
+                                        <a href='tel:+8801872238027'>
                                             <FontAwesomeIcon className='pr-2' icon={faPhoneAlt}></FontAwesomeIcon>
                                             Call Now
-                                        </Link>
+                                        </a>
                                     </button>
                                 </div>
                             </div>

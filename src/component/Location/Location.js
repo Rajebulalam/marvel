@@ -2,7 +2,7 @@ import React from 'react';
 
 const Location = () => {
     return (
-        <div className='w-full lg:w-11/12 px-4 lg:px-6 mx-auto pt-14'>
+        <div className='w-full lg:w-11/12 px-4 lg:px-6 mx-auto pt-14 bg-white'>
             <h2 className='text-4xl font-serif pb-10 text-center font-bold text-black'>Our Office <span className='text-primary'>Location</span> </h2>
 
             <div class="mapouter">
