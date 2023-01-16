@@ -2,16 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import TopHeader from './TopHeader';
 import logo from '../../../../assets/images/mr-tech-logos_transparent.png';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
 
+    const { t } = useTranslation();
+
     const menuItem = <>
-        <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'>Home</Link></li>
-        <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'>About Us</Link></li>
-        <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'>Products</Link></li>
+        <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'> {t('link-item-two')} </Link></li>
+        <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'> {t('link-item-three')} </Link></li>
+        <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'> {t('link-item-four')} </Link></li>
         {/* <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'>Services</Link></li> */}
-        <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'>Brands</Link></li>
-        <li><Link to='/contact' className='text-white hover:text-accent text-[17px] font-medium'>Contact Us</Link></li>
+        <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'> {t('link-item-five')} </Link></li>
+        <li><Link to='/contact' className='text-white hover:text-accent text-[17px] font-medium'> {t('link-item-one')} </Link></li>
     </>;
 
     return (

@@ -8,8 +8,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
+
+    const { t} = useTranslation();
+
     return (
         <div className='bg-secondary'>
             <div className=''>
@@ -42,15 +46,17 @@ const Banner = () => {
                             className="mySwiper"
                         >
                             <div className=' w-full md:w-11/12 px-2 md:px-6 mx-auto banner-content'>
-                                <h2 className='text-white font-serif text-xl sm:text-2xl lg:text-4xl font-bold'>Providing the best Marvel Tiles <br />
-                                    Product and Service
+                                <h2 className='text-white font-serif text-xl sm:text-2xl lg:text-4xl font-bold'>
+                                    {t('banner-title-one')}
+                                    <br />
+                                    {t('banner-title-two')}
                                 </h2>
                                 <div className='mt-4'>
-                                    <button className='btn bg-primary mr-4'>Our Product</button>
+                                    <button className='btn bg-primary mr-4'>{t('order-button')}</button>
                                     <button className='btn border-2 border-primary bg-secondary text-primary hover:text-white'>
                                         <a href='tel:+8801872238027'>
                                             <FontAwesomeIcon className='pr-2' icon={faPhoneAlt}></FontAwesomeIcon>
-                                            Call Now
+                                            {t('call-button')}
                                         </a>
                                     </button>
                                 </div>

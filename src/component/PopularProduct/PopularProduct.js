@@ -6,8 +6,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useTranslation } from 'react-i18next';
 
 const PopularProduct = () => {
+
+    const { t } = useTranslation();
 
     const popularProducts = [
         {
@@ -38,7 +41,7 @@ const PopularProduct = () => {
 
     return (
         <div className='w-full lg:w-11/12 px-4 lg:px-6 mx-auto pb-5 bg-white'>
-            <h2 className='text-center text-4xl font-extrabold font-serif pb-1'>Our Popular <span className='text-primary'>Products</span></h2>
+            <h2 className='text-center text-4xl font-extrabold font-serif pb-1'> {t('popular-product-title-second')} <span className='text-primary'> {t('popular-product-title-first')} </span></h2>
             <div className='pt-8'>
                 <Swiper
                     breakpoints={{
