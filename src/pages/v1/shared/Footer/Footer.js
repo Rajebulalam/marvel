@@ -1,4 +1,4 @@
-import { faFacebookF, faFacebookMessenger, faLinkedinIn, faWhatsapp } from '@fortawesome/fontawesome-free-brands';
+import { faFacebookF, faFacebookMessenger, faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/fontawesome-free-brands';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -29,7 +29,8 @@ const Footer = () => {
                     <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[13px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faFacebookF}></FontAwesomeIcon></span>
                     <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faWhatsapp}></FontAwesomeIcon></span>
                     <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faFacebookMessenger}></FontAwesomeIcon></span>
-                    <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[10px] py-2 hover:bg-primary hover:text-white' icon={faLinkedinIn}></FontAwesomeIcon></span>
+                    <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[10px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faLinkedinIn}></FontAwesomeIcon></span>
+                    <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[10px] py-2 hover:bg-primary hover:text-white' icon={faInstagram}></FontAwesomeIcon></span>
                 </div>
             </div>
 

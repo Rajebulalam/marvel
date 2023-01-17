@@ -8,11 +8,13 @@ import Header from './pages/v1/shared/Header/Header';
 import Contact from './pages/v1/Contact/Contact';
 import React, { Suspense } from 'react';
 import './i18n';
+import ScrollToTop from './component/ScrollTop/ScrollTop';
 
 function App() {
   return (
     <div>
       <Suspense fallback={null}>
+        <ScrollToTop />
         <Header></Header>
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>

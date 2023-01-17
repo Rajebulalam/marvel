@@ -26,7 +26,7 @@ const Header = () => {
             <div className='bg-primary py-2'>
                 <div className="w-full md:w-11/12 px-4 md:px-6 mx-auto navbar">
                     <div className="navbar-start">
-                        <Link className="flex items-center">
+                        <Link className="flex items-center" to='/'>
                             <img className='w-[90px] md:w-[100px]' src={logo} alt="logo" />
                         </Link>
                         <div className="dropdown">
