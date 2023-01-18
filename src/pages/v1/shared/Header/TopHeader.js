@@ -1,5 +1,5 @@
 import { faFacebookF, faFacebookMessenger, faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/fontawesome-free-brands';
-import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLanguage, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import i18next from 'i18next';
@@ -21,25 +21,31 @@ const TopHeader = () => {
 
     return (
         <div className='py-2 bg-white'>
-            <div className='w-full md:w-11/12 px-4 md:px-6 mx-auto'>
-                <div className='flex justify-center md:justify-between items-center'>
+            <div className='w-full md:w-11/12 px-6 md:px-6 mx-auto'>
+                <div className='flex justify-between items-center'>
                     <div className='hidden md:flex'>
                         <span className='flex items-center text-[16px] mr-3'>
                             <FontAwesomeIcon icon={faPhoneAlt} className='text-black pr-3'></FontAwesomeIcon>
-                            + 000 00 000 000
+                            +971 588822254
                         </span>
                         <span className='flex items-center text-[17px]'>
                             <FontAwesomeIcon icon={faEnvelope} className='text-black pr-3'></FontAwesomeIcon>
-                            abc@gmail.com
+                            onestaramin2020@gmail.com
                         </span>
                     </div>
 
-                    <div className='flex items-center'>
+                    <div className='flex justify-center items-center'>
                         {
                             english ? <div onClick={arabicHandler}>
-                                <button className='btn btn-primary' onClick={() => i18next.changeLanguage('ar')}>Ar</button>
-                            </div> : <div onClick={englishHandler}>
-                                <button className='btn btn-primary mr-2' onClick={() => i18next.changeLanguage('en')}>En</button>
+                                <button className='text-center' onClick={() => i18next.changeLanguage('ar')}>
+                                    <FontAwesomeIcon className='text-xl sm:text-4xl text-primary flex justify-center mx-auto' icon={faLanguage}></FontAwesomeIcon>
+                                    عربي
+                                </button>
+                            </div> : <div className='text-center' onClick={englishHandler}>
+                                <button onClick={() => i18next.changeLanguage('en')}>
+                                    <FontAwesomeIcon className='text-xl sm:text-4xl text-primary flex justify-center mx-auto' icon={faLanguage}></FontAwesomeIcon>
+                                    <span>English</span>
+                                </button>
                             </div>
                         }
                         {/* {

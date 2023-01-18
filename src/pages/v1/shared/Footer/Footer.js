@@ -2,7 +2,7 @@ import { faFacebookF, faFacebookMessenger, faInstagram, faLinkedinIn, faWhatsapp
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../../../assets/images/MR Tech-logos_black.png';
+import logo from '../../../../assets/images/HBM-logos_transparent.png'
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
