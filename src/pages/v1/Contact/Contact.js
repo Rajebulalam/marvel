@@ -16,7 +16,8 @@ const Contact = () => {
                     {t('contact-us-title')}
                 </h2>
                 <p className='text-center text-xl'>{t('contact-us-content')}</p>
-                <div className='flex-none md:flex items-center py-14'>
+                <div data-aos="fade-right" data-aos-easing="linear"
+                    data-aos-duration="1000" className='flex-none md:flex items-center py-14'>
                     <div className='w-full mb-4 lg:mb-0'>
                         <form>
                             <div className='flex items-center mb-2'>
@@ -42,7 +43,8 @@ const Contact = () => {
                     </div>
 
                     {/* Address */}
-                    <div className='w-full lg:w-10/12 mx-auto px-4 lg:px-6'>
+                    <div data-aos="fade-left" 
+                        data-aos-duration="1000" className='w-full lg:w-10/12 mx-auto px-4 lg:px-6'>
                         <div className='px-5 rounded'>
                             <div className='mb-4'>
                                 <h3 className='text-2xl text-primary font-serif font-bold'> <FontAwesomeIcon icon={faLocationDot} className='pr-4' ></FontAwesomeIcon> Address</h3>

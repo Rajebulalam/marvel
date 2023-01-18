@@ -13,28 +13,36 @@ const Products = () => {
                 <h2 className='text-4xl text-center font-bold font-serif'> {t('product-title-first')} <span className='text-primary'> {t('product-title-second')} </span></h2>
                 <p className='text-center text-xl'> {t('product-subtitle')} </p>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pt-12'>
-                    <div className='mb-5 lg:mb-0 shadow-xl product'>
+                    <div data-aos="flip-left" data-aos-easing="linear"
+                        data-aos-duration="1000" className='mb-5 lg:mb-0 shadow-xl product'>
                         <img className='h-56' src={tiles} alt="tiles" />
                     </div>
-                    <div className='mb-5 lg:mb-0 shadow-xl product'>
+                    <div data-aos="flip-left" data-aos-easing="linear"
+                        data-aos-duration="1000" className='mb-5 lg:mb-0 shadow-xl product'>
                         <img className='h-56' src={tiles} alt="tiles" />
                     </div>
-                    <div className='mb-5 lg:mb-0 shadow-xl product'>
+                    <div data-aos="flip-left" data-aos-easing="linear"
+                        data-aos-duration="1000" className='mb-5 lg:mb-0 shadow-xl product'>
                         <img className='h-56' src={tiles} alt="tiles" />
                     </div>
-                    <div className='mb-5 lg:mb-0 shadow-xl product'>
+                    <div data-aos="flip-left" data-aos-easing="linear"
+                        data-aos-duration="1000" className='mb-5 lg:mb-0 shadow-xl product'>
                         <img className='h-56' src={tiles} alt="tiles" />
                     </div>
-                    <div className='mb-5 lg:mb-0 shadow-xl product'>
+                    <div data-aos="flip-up" data-aos-easing="linear"
+                        data-aos-duration="1000" className='mb-5 lg:mb-0 shadow-xl product'>
                         <img className='h-56' src={tiles} alt="tiles" />
                     </div>
-                    <div className='mb-5 lg:mb-0 shadow-xl product'>
+                    <div data-aos="flip-up" data-aos-easing="linear"
+                        data-aos-duration="1000" className='mb-5 lg:mb-0 shadow-xl product'>
                         <img className='h-56' src={tiles} alt="tiles" />
                     </div>
-                    <div className='mb-5 lg:mb-0 shadow-xl product'>
+                    <div data-aos="flip-up" data-aos-easing="linear"
+                        data-aos-duration="1000" className='mb-5 lg:mb-0 shadow-xl product'>
                         <img className='h-56' src={tiles} alt="tiles" />
                     </div>
-                    <div className='mb-5 lg:mb-0 shadow-xl product'>
+                    <div data-aos="flip-up" data-aos-easing="linear"
+                        data-aos-duration="1000" className='mb-5 lg:mb-0 shadow-xl product'>
                         <img className='h-56' src={tiles} alt="tiles" />
                     </div>
                 </div>

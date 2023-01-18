@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
-    // Stick top
+    // Sticky top
     const [stickyClass, setStickyClass] = useState('relative');
 
     useEffect(() => {

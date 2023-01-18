@@ -6,11 +6,23 @@ import Home from './pages/v1/Home/Home';
 import Footer from './pages/v1/shared/Footer/Footer';
 import Header from './pages/v1/shared/Header/Header';
 import Contact from './pages/v1/Contact/Contact';
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import './i18n';
 import ScrollToTop from './component/ScrollTop/ScrollTop';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+
+
+  // Used for Animation
+  useEffect(() => {
+    AOS.init({
+      easing: 'ease',
+      once: false,
+    });
+  }, [])
+
   return (
     <div>
       <Suspense fallback={null}>
