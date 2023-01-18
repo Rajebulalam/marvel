@@ -4,6 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../../assets/images/HBM-logos_transparent.png'
 import { useTranslation } from 'react-i18next';
+import { ExternalLink } from 'react-external-link';
 
 const Footer = () => {
 
@@ -27,7 +28,11 @@ const Footer = () => {
                 {/* Social Icon part */}
                 <div className='flex justify-center py-6'>
                     <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[13px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faFacebookF}></FontAwesomeIcon></span>
-                    <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faWhatsapp}></FontAwesomeIcon></span>
+                    <span>
+                        <ExternalLink href='https://wa.me/+8801872238027'>
+                            <FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faWhatsapp}></FontAwesomeIcon>
+                        </ExternalLink>
+                    </span>
                     <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faFacebookMessenger}></FontAwesomeIcon></span>
                     <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[10px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faLinkedinIn}></FontAwesomeIcon></span>
                     <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[10px] py-2 hover:bg-primary hover:text-white' icon={faInstagram}></FontAwesomeIcon></span>
@@ -53,7 +58,7 @@ const Footer = () => {
                 <p className='text-xl text-center md:text-left font-semibold pb-3 md:pb-0'> {t('all-right-reserved')} </p>
                 <p className='text-xl font-semibold text-center md:text-right'>{t('powered-by-first')} <span className='text-primary'>{t('powered-by-last')}</span></p>
             </div>
-        </footer>
+        </footer >
     );
 };
 

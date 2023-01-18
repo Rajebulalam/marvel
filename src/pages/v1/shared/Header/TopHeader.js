@@ -3,6 +3,7 @@ import { faEnvelope, faLanguage, faPhoneAlt } from '@fortawesome/free-solid-svg-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import i18next from 'i18next';
+import { ExternalLink } from 'react-external-link';
 
 const TopHeader = () => {
 
@@ -48,17 +49,16 @@ const TopHeader = () => {
                                 </button>
                             </div>
                         }
-                        {/* {
-                            arabic ?  <div onClick={englishHandler}>
-                            <button className='btn btn-primary mr-2' onClick={() => i18next.changeLanguage('en')}>En</button>
-                        </div> : ''
-                        } */}
-
                     </div>
 
+                    {/* Social Icon */}
                     <div>
                         <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[13px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faFacebookF}></FontAwesomeIcon></span>
-                        <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faWhatsapp}></FontAwesomeIcon></span>
+                        <span>
+                            <ExternalLink href='https://wa.me/+8801872238027'>
+                                <FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faWhatsapp}></FontAwesomeIcon>
+                            </ExternalLink>
+                        </span>
                         <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[9px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faFacebookMessenger}></FontAwesomeIcon></span>
                         <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[10px] py-2 mr-3 hover:bg-primary hover:text-white' icon={faLinkedinIn}></FontAwesomeIcon></span>
                         <span><FontAwesomeIcon className='text-xl font-bold border border-primary rounded-full px-[10px] py-2 hover:bg-primary hover:text-white' icon={faInstagram}></FontAwesomeIcon></span>
