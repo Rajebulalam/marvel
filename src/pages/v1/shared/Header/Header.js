@@ -33,7 +33,7 @@ const Header = () => {
 
     const menuItem = <>
         <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'> {t('link-item-two')} </Link></li>
-        <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'> {t('link-item-three')} </Link></li>
+        <li><Link to='/about-us' className='text-white hover:text-accent text-[17px] font-medium'> {t('link-item-three')} </Link></li>
         <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'> {t('link-item-four')} </Link></li>
         {/* <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'>Services</Link></li> */}
         <li><Link to='/' className='text-white hover:text-accent text-[17px] font-medium'> {t('link-item-five')} </Link></li>

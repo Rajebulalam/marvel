@@ -44,7 +44,7 @@ const Footer = () => {
                 <ul style={{ borderTop: '1px solid #242F9B', borderBottom: '1px solid #242F9B' }}>
                     <li className='py-7 w-full md:w-11/12 px-4 md:px-6 mx-auto flex-none md:flex justify-center'>
                         <Link to='/home' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>{t('link-item-two')}</Link>
-                        <Link to='/' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>{t('link-item-three')}</Link>
+                        <Link to='/about-us' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>{t('link-item-three')}</Link>
                         <Link to='/' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>{t('link-item-four')}</Link>
                         {/* <Link to='/' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>Services</Link> */}
                         <Link to='/' className='text-xl font-medium uppercase px-5 text-primary hover:text-black block md:flex text-center pb-2'>{t('link-item-five')}</Link>

@@ -43,12 +43,12 @@ const Contact = () => {
                     </div>
 
                     {/* Address */}
-                    <div data-aos="fade-left" 
+                    <div data-aos="fade-left"
                         data-aos-duration="1000" className='w-full lg:w-10/12 mx-auto px-4 lg:px-6'>
                         <div className='px-5 rounded'>
                             <div className='mb-4'>
                                 <h3 className='text-2xl text-primary font-serif font-bold'> <FontAwesomeIcon icon={faLocationDot} className='pr-4' ></FontAwesomeIcon> Address</h3>
-                                <p className='pl-11 text-lg'> Hassan Building Fzco, Dragon Mall, <br /> Dubai UAE</p>
+                                <p className='pl-11 text-lg'> Hassan Building FZCO, Dragon Mall, <br /> Dubai UAE</p>
                             </div>
                             <div className='mb-4'>
                                 <h3 className='text-2xl text-primary font-serif font-bold'> <FontAwesomeIcon icon={faPhoneAlt} className='pr-4' ></FontAwesomeIcon> Phone</h3>

@@ -6,14 +6,14 @@ import Home from './pages/v1/Home/Home';
 import Footer from './pages/v1/shared/Footer/Footer';
 import Header from './pages/v1/shared/Header/Header';
 import Contact from './pages/v1/Contact/Contact';
+import ScrollToTop from './component/ScrollTop/ScrollTop';
+import AboutUs from './pages/v1/AboutUs/AboutUs';
 import React, { Suspense, useEffect } from 'react';
 import './i18n';
-import ScrollToTop from './component/ScrollTop/ScrollTop';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
-
 
   // Used for Animation
   useEffect(() => {
@@ -31,6 +31,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/home' element={<Home></Home>}></Route>
+          <Route path='/about-us' element={<AboutUs></AboutUs>}></Route>
           <Route path='/contact' element={<Contact></Contact>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>
